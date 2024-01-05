@@ -1,0 +1,171 @@
+	@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+	:root {
+		--main :#c277ff;
+	}
+	html {
+		font-family: 'JetBrains Mono', monospace;
+	}
+	body{
+		background-color:  #1e1d1d; ;
+	}
+	*{
+		margin-left: 0;
+		overflow-x: hidden;
+	}
+	.hh{
+		z-index: 10000;
+	}
+	
+	main {
+		
+		background-color: #1e1d1d;
+		margin-top: 50px;
+		border-radius: 12px;
+		color: white;
+		font-size: 20px;
+		line-height: 1.3;
+    margin-right : 200px;
+    margin-left : 200px;
+	}
+	span{
+		color: var(--main);
+	}
+	li{
+		list-style-type: none;
+	}
+
+	.tech{
+		padding: 5px;   
+	}
+
+  .linkss{
+    display: flex;
+    gap: 15px;
+    width: 110px;
+    justify-content: end;
+
+  }
+  
+  .projects{
+      display: grid;
+      gap: 10px;  
+      padding: 16px;
+      grid-template-columns: repeat(3, minmax(130px, 1fr)); /* Responsive grid */
+
+  }
+  p{
+    margin: 0;
+  }
+	.tech{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); /* Responsive grid */
+    gap: 10px;
+    padding : 10px;
+  }
+	.socials{
+		display: flex;
+		gap: 20px;
+	}
+	.icons{
+		display: flex;
+		gap: 10px;
+	}
+	.top{
+		display: flex;
+    justify-content: space-between;
+	}
+	.top a{
+		margin-top: 25px;
+	}
+	.tech-container{
+		cursor: pointer;
+		padding: 16px;
+		background-color: #292929;
+		border-radius: 8px;
+		box-shadow: 0.5px 0.5px 0.5px var(--main);
+    margin-top : 15px;
+		text-align: center;
+
+	}
+
+  .socials{
+    margin-top: 15px;
+  }
+	a{
+		text-decoration: none;
+	}
+	.project{
+		width: 300px;
+		cursor: pointer;
+		padding: 16px;
+		background-color: #292929;
+		border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: .3s;
+  }
+
+  .project:hover{
+    box-shadow: 1px 1px 0px 0px var(--main);
+  }
+	.banner{
+		width: 100%;
+		height: 100px;
+		object-fit:cover;
+	}
+	.about{
+	}
+	
+	hr{
+		opacity: 10%;
+	}
+
+	.tech-container:hover{
+		transform: translateY(-0.25rem);
+		transition: ease-out;
+		transition-duration: 300ms;
+		
+
+		
+	}
+	.project{
+		cursor: pointer;
+	}
+	a{
+		color:white;
+		
+	}
+
+
+  .used{
+    display: flex;
+    gap: 5px;
+    font-size: 12px;
+
+
+  
+  }
+  .used p{
+    padding: 10px;
+		background-color: #1E1d1d;
+		border-radius: 8px;
+    margin-bottom: 5px; margin-top: 5px;
+  }
+
+	@media only screen and (max-width: 768px) {
+		.tech{
+			flex-direction: column;
+		}
+
+    main{
+      margin-right: 20px; margin-left: 20px;
+    }
+		.projects{
+      grid-template-columns: repeat(1, minmax(130px, 1fr)); /* Responsive grid */
+
+    }
+	
+
+}
+
